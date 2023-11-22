@@ -6,8 +6,9 @@
   </div>
 
   <section class="w-screen h-screen bg-coal bg-image-square overflow-hidden">
-    <div v-if="randomNumber" class="w-full h-full flex justify-center items-center">
-        <div class="face text-white">{{ randomNumber }}</div>
+    <div class="w-full h-full flex justify-center items-center">
+        <div v-if="randomNumber" class="face text-white">{{ randomNumber }}</div>
+        <h1 v-else class="text-white text-3xl">Start to play throw the dice :) </h1>
     </div>
   </section>
 </template>
