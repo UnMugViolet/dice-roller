@@ -1,4 +1,4 @@
-# dice-roller
+# Dice roller for MDS Project
 
 ## Project setup
 ```
