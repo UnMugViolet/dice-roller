@@ -5,11 +5,12 @@
     :disabled="rolling">Roll it ! </button>
   </div>
 
-  <section class="w-screen h-screen bg-coal bg-image-square overflow-hidden">
+  <section class="w-screen h-screen-responsive bg-coal bg-image-square overflow-hidden">
     <div class="w-full h-full flex justify-center items-center">
         <div v-if="randomNumber" class="face text-white">{{ randomNumber }}</div>
-        <h1 v-else class="text-white text-3xl">Start to play throw the dice :) </h1>
+        <h1 v-else class="text-white text-3xl text-center">Start to play throw the dice :) </h1>
     </div>
+
   </section>
 </template>
 
@@ -69,4 +70,7 @@ export default {
   filter: drop-shadow(0px 0px 0px #231f20);
 }
 
+.h-screen-responsive {
+  height: 100dvh;
+}
 </style>  
